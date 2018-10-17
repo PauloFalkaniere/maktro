@@ -1,0 +1,235 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+.imageFeaturette{
+  width: 80%;
+}
+.maktroPanel{
+  padding: 5rem;
+}
+.btnMaktro{
+  text-transform: uppercase; !important;
+  color: black !important;
+}
+.texto{
+  font-family: 'Teko';
+  font-size: 15pt;
+  /* width: 460px;
+  height: 400px;
+  top: 35%;
+  left: 25%; */
+}
+.empresas{
+  width: 100%;
+  height: 100%;
+}
+
+.maktroDisel{
+  background-image: url('../image/fundoDisel.jpg');
+}
+.maktroLocacoes{
+  background-image: url('../image/fundoLocacoes.png');
+}
+
+.maktroPecas{
+  background-image: url('../image/fundoPecas.png');
+}
+
+
+.carousel-indicators > li {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #ffd802;
+}
+
+.carousel-indicators .active {
+  background-color: #302f2f;
+}
+
+.navbarmaktro{
+  background-color: white !important;
+  text-transform: uppercase;
+  border-bottom: 4px solid #ebc32e;
+}
+
+.navbarmaktro, a{
+  color: black;
+}
+
+.iconMargin{
+  margin-left: 3px;
+}
+
+.icon{
+  background: #f4c700;
+  border-color: #f4c700 !important;
+  margin-left: 1px;
+  color: #fefedf;
+}
+
+.vl {
+    border-left: 2px solid #ebc32e;
+    height: 40px;
+}
+
+.navbar-collapse{
+    margin-left: 20%;
+}
+
+.vl-logo{
+  border-right: 4px solid #ebc32e;
+  height: 60px;
+  width: 210px;
+  -webkit-transform: skew(-55deg); /* Chrome, Opera */
+    -ms-transform: skew(-55deg); /* IE */
+        transform: skew(-55deg); /* Padrão */
+        position: absolute;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 7rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin-top: 5rem; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media(max-width: 875px){
+  .imageFeaturette{
+    float: initial !important;
+  }
+  .iconmobile{
+    display: none !important;
+  }
+  .imagensEmpresaManutencao{
+      background-image: url('../image/empresasManutencao.jpg');
+      width:180px;
+      height:370px;
+      background-repeat: no-repeat;
+      border-radius: 5% !important;
+  }
+  .imagensEmpresaPecas{
+      background-image: url('../image/empresasPecas.jpg');
+      background-size:498px;
+      width:180px;
+      height:370px;
+      background-repeat: no-repeat;
+      border-radius: 5% !important;
+  }
+      .imagensEmpresaLocacao{
+      background-image: url('../image/empresasLocacao.jpg');
+      background-size: 656px;
+      width:180px;
+      height:370px;
+      background-repeat: no-repeat;
+      border-radius: 5% !important;
+  }
+}
+
+@media(max-width: 767px){
+    .iconmobile{
+      display: initial !important;
+    }
+}
+
+@media (max-width: 767px){
+
+  .vl-logo{
+    display: none;
+  }
+  .vl{
+    border-left: none;
+    border-bottom: 2px solid #ebc32e;
+    height: 0px;
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px){
+
+  .vl-mobile{
+    display: none;
+  }
+}
+
+
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
