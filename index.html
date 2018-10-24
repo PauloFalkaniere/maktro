@@ -13,6 +13,9 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="assets/css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/photoswipe.min.css">
+    <link rel="stylesheet" href="assets/css/default-skin.min.css">
+
     <!-- Import fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Teko' rel='stylesheet'>
@@ -45,7 +48,7 @@
           </li>
           <div class="vl"></div>
           <li class="nav-item">
-            <a class="nav-link" href="#">Galeria</a>
+            <a class="nav-link" onclick="openPhotoSwipeGalery()">Galeria</a>
           </li>
           <div class="vl"></div>
           <li class="nav-item">
@@ -137,7 +140,7 @@
                       <li>Lanternagem e Pintura</li>
                     </ul>
                   </p>
-                  <p class="text-center"><a class="btn btn-outline-warning btnMaktro" href="#" role="button">Fotos</a></p>
+                  <p class="text-center"><button class="btn btn-outline-warning btnMaktro" role="button" onclick="openPhotoSwipeDiesel()">Fotos</button></p>
                 </div>
                 <div class="col-lg-7">
                   <img class="featurette-image img-fluid mx-auto" src="assets/image/empilhadeiradisel.png" style="width:100%">
@@ -168,7 +171,7 @@
                         Máquinas empilhadeiras e guindastes, revisados, com garantia de procedência.
                     </ul>
                   </p>
-                  <p class="text-center"><a class="btn btn-outline-warning btnMaktro" href="#" role="button">Fotos</a></p>
+                  <p class="text-center"><button class="btn btn-outline-warning btnMaktro" role="button" onclick="openPhotoSwipeLocacoes()">Fotos</button></p>
                 </div>
                 <div class="col-lg-7">
                   <img class="featurette-image img-fluid mx-auto" src="assets/image/mklocacao.png" style="width:100%; margin-top: 15%;">
@@ -199,7 +202,7 @@
                       Confiabilidade e garantia de fábrica
                     </ul>
                   </p>
-                  <p class="text-center"><a class="btn btn-outline-warning btnMaktro" href="#" role="button">Fotos</a></p>
+                  <p class="text-center"><button class="btn btn-outline-warning btnMaktro" onclick="openPhotoSwipePecas()" role="button">Fotos</button></p>
                 </div>
                 <div class="col-lg-7">
                   <img class="featurette-image img-fluid mx-auto" src="assets/image/peca.png" style="width:100%; margin-top: 8%;">
@@ -213,13 +216,71 @@
 
       </div><!-- /.container -->
 
-      <!-- <div class="alert alert-success" role="alert">
-        <h4 class="alert-heading">Well done!</h4>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-        <hr>
-        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-      </div> -->
+      <!-- Root element of PhotoSwipe. Must have class pswp. -->
+      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
+      <!-- Background of PhotoSwipe.
+      It's a separate element, as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+      <div class="pswp__container">
+      <!-- don't modify these 3 pswp__item elements, data is added later on -->
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+      <div class="pswp__top-bar">
+
+      <!--  Controls are self-explanatory. Order can be changed. -->
+
+      <div class="pswp__counter"></div>
+
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+      <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+      <!-- element will get class pswp__preloader--active when preloader is running -->
+      <div class="pswp__preloader">
+      <div class="pswp__preloader__icn">
+      <div class="pswp__preloader__cut">
+      <div class="pswp__preloader__donut"></div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+      </div>
+
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+
+      <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+      </div>
+
+      </div>
+
+      </div>
+
+      </div>
 
       <!-- FOOTER -->
       <footer id="contato" class="">
@@ -299,6 +360,8 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
+    <script type="text/javascript" src="assets/js/photoswipe.min.js"></script>
+    <script type="text/javascript" src="assets/js/photoswipe-ui-default.min.js"></script>
     <script src="assets/js/maktroController.js"type="text/javascript"></script>
   </body>
 </html>
