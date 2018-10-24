@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST['token'])) {
-  $for = 'paulofalkaniere@gmail.com';
+  $for = 'vendas@maktrodiesel.com.br';
   $post = extract($_POST);
   $name = $_POST['name'];
   $email = $_POST['email'];
@@ -14,11 +14,11 @@ if (isset($_POST['token'])) {
 
 //5 – agora inserimos as codificações corretas e  tudo mais.
   $headers =  "Content-Type:text/html; charset=UTF-8\n";
-  $headers .= "From:  dominio.com.br<sistema@dominio.com.br>\n"; //Vai ser //mostrado que  o email partiu deste email e seguido do nome
-  $headers .= "X-Sender:  <sistema@dominio.com.br>\n"; //email do servidor //que enviou
+  $headers .= "From:  www.maktrodiesel.com.br\n"; //Vai ser //mostrado que  o email partiu deste email e seguido do nome
+  $headers .= "X-Sender:  <site@maktrodiesel.com.br>\n"; //email do servidor //que enviou
   $headers .= "X-Mailer: PHP  v".phpversion()."\n";
   $headers .= "X-IP:  ".$_SERVER['REMOTE_ADDR']."\n";
-  $headers .= "Return-Path:  <sistema@dominio.com.br>\n"; //caso a msg //seja respondida vai para  este email.
+  $headers .= "Return-Path:  <site@maktrodiesel.com.br>\n"; //caso a msg //seja respondida vai para  este email.
   $headers .= "MIME-Version: 1.0\n";
   try {
     mail($for, $subject, $mensagem, $headers);  //função que faz o envio do email.

@@ -56,13 +56,19 @@ footer{
 
 .maktroDisel{
   background-image: url('../image/fundoDisel.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .maktroLocacoes{
   background-image: url('../image/fundoLocacoes.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .maktroPecas{
   background-image: url('../image/fundoPecas.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .thumbnail-wrapper {
