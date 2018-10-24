@@ -11,7 +11,6 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="assets/css/carousel.css" rel="stylesheet">
     <!-- Import fonts -->
@@ -247,16 +246,34 @@
             </div>
             <div class="col-lg-4 mkrodape">
               <h2 style="color: black">FALE CONOSCO</h2>
-              <form>
                 <div class="form-group">
-                  <input class="form-control" type="text" name="nome" value="" placeholder="Nome">
-                  <input class="form-control maktroInput" type="text" name="nome" value="" placeholder="Email">
-                  <textarea class="form-control maktroInput" id="exampleFormControlTextarea1" rows="3" placeholder="Assunto"></textarea>
-                  <div class="float-right">
-                    <input class="btn btn-outline-success" type="submit" name="Enviar" value="Enviar" style="margin-top:5%">
-                  </div>
+                  <form>
+                    <div class="alert alert-danger alert-dismissible fade show alert-danger-email" role="alert" style="display: none">
+                      <strong>Oppps! Ocorreu um erro.</strong>tente mais tarde.
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="alert alert-danger alert-dismissible fade show alert-danger-email-text" role="alert" style="display: none">
+                      Email inválido.
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert" style="display: none">
+                      Email enviado com sucesso!
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <input class="form-control" type="text" id="name" name="name" value="" placeholder="Nome">
+                    <input onblur="valida()" class="form-control maktroInput" type="text" id="email" name="email" value="" placeholder="Email">
+                    <textarea class="form-control maktroInput" id="content" name="content" rows="3" placeholder="Assunto"></textarea>
+                  </form>
+                    <div class="float-right">
+                      <button class="btn btn-success" style="margin-top:5%" onclick="send();">Enviar</button>
+                    </div>
                 </div>
-              </form>
             </div>
             <div class="col-lg-4">
               <div class="texto-rodape">
@@ -274,13 +291,14 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCLAD2cNN5SBuOKuWpt5vYXUfXmWJEUoM&callback=initMap"></script>
-    <script src="assets/js/maktroController.js"type="text/javascript"></script> -->
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCLAD2cNN5SBuOKuWpt5vYXUfXmWJEUoM&callback=initMap"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
+    <script src="assets/js/maktroController.js"type="text/javascript"></script>
   </body>
 </html>

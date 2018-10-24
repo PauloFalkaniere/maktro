@@ -20,7 +20,8 @@ footer{
   border-right: 4px solid black;
   height: 245px;
   /* position: absolute; */
-  margin-top: 5%;
+  padding-top: 5%;
+  padding-bottom: 30%;
 }
 
 .imageFeaturette{
