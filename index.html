@@ -69,20 +69,24 @@
 
     <main role="main">
       <!-- Slides -->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide resposive" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
         </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner resposive">
           <div class="carousel-item active">
-            <img class="first-slide img-fluid" src="assets/image/banner01.jpg" alt="First slide">
+            <a href="#maktroDisel">
+              <img class="first-slide img-fluid resposive" src="assets/image/banner01.jpg" alt="First slide">
+            </a>
              <div class="carousel-caption d-none d-md-block" style="right: 1px !important">
               <a class="btn btn-outline-warning" href="#maktroDisel" style="color: white" role="button">Confira</a>
              </div>
           </div>
           <div class="carousel-item">
-            <img class="second-slide img-fluid" src="assets/image/banner02.jpg" alt="Second slide">
+            <a href="#maktroPecas">
+              <img class="second-slide img-fluid resposive" src="assets/image/banner02.jpg" alt="Second slide">
+            </a>
             <div class="carousel-caption d-none d-md-block" style="right: 1px !important">
              <a class="btn btn-outline-primary" href="#maktroPecas" style="color: black; border-color:#3d009d" role="button">Confira</a>
             </div>
@@ -128,7 +132,7 @@
                 <div class="col-lg-5">
                   <div class="row">
                     <div class="col">
-                      <img class="rounded float-right img-fluid imageFeaturette" src="assets/image/titulodisel.png">
+                      <img class="rounded float-right img-fluid" src="assets/image/diesel/tituloDiesel.png">
                     </div>
                   </div>
                   <br>
@@ -137,7 +141,7 @@
                     Com uma frota própria e técnicos treinados e capacitados, nossos serviços vão de manutenções preventivas à retifica de motores e transmissões, procurando sempre atender nosso cliente com agilidade e qualidade.                  </p>
                 </div>
                 <div class="col-lg-7">
-                  <img class="featurette-image img-fluid mx-auto" src="assets/image/empilhadeiradisel.png" style="width:100%">
+                  <img class="featurette-image img-fluid mx-auto" src="assets/image/diesel/empilhadeiraDiesel.png" style="width:100%">
                 </div>
               </div>
               <div class="row">
@@ -156,7 +160,7 @@
                 <div class="col-lg-5">
                   <div class="row">
                     <div class="col">
-                      <img class="rounded float-right img-fluid imageFeaturette" src="assets/image/logoLocacoes.png">
+                      <img class="rounded float-right img-fluid" src="assets/image/locacao/tituloLocacao.png">
                     </div>
                   </div>
                   <br>
@@ -187,7 +191,7 @@
                   <p class="text-center"><button class="btn btn-outline-warning btnMaktro" role="button" onclick="openPhotoSwipeLocacoes()">Fotos</button></p>
                 </div>
                 <div class="col-lg-7">
-                  <img class="featurette-image img-fluid mx-auto" src="assets/image/mklocacao.png" style="width:100%; margin-top: 15%;">
+                  <img class="featurette-image img-fluid mx-auto" src="assets/image/locacao/guindasteLocacao.png" style="width:100%; margin-top: 15%;">
                 </div>
               </div>
             </div>
@@ -201,7 +205,7 @@
                 <div class="col-lg-5">
                   <div class="row">
                     <div class="col">
-                      <img class="rounded float-right img-fluid imageFeaturette" src="assets/image/maktropecas.png">
+                      <img class="rounded float-right img-fluid" src="assets/image/pecas/tituloPeca.png">
                     </div>
                   </div>
                   <br>
@@ -212,7 +216,7 @@
                   <p class="text-center"><button class="btn btn-outline-warning btnMaktro" onclick="openPhotoSwipePecas()" role="button">Fotos</button></p>
                 </div>
                 <div class="col-lg-7">
-                  <img class="featurette-image img-fluid mx-auto" src="assets/image/peca.png" style="width:100%; margin-top: 8%;">
+                  <img class="featurette-image img-fluid mx-auto" src="assets/image/pecas/peca.png" style="width:100%; margin-top: 8%;">
                 </div>
               </div>
             </div>
@@ -272,7 +276,7 @@
       <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
       <div class="pswp__share-tooltip"></div>
       </div>
-
+<!-- <i class="fas fa-arrow-left"></i> -->
       <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
       </button>
 
@@ -343,8 +347,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-              <div class="texto-rodape">
+            <div class="col-lg-4 maps">
+              <div class="texto-rodape google-maps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.3006816642!2d-44.07305318508511!3d-19.953853286590327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6bfd2dcf4050f%3A0x34f6adfd18aeda34!2sMaktro+Diesel+Ltda!5e0!3m2!1spt-BR!2sbr!4v1539998535046" width="397" height="300" frameborder="0" style="border:0"></iframe>
               </div>
             </div>

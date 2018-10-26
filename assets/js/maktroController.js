@@ -13,34 +13,44 @@ openPhotoSwipeGalery = function() {
     // build items array
     var items = [
       {
-          src: 'assets/image/galeria/02.png',
-          w: 964,
+        src: 'assets/image/galeria/all/01.jpeg',
+        w: 1024,
+        h: 683
+      },
+      {
+        src: 'assets/image/galeria/all/02.jpeg',
+        w: 1024,
+        h: 683
+      },
+      {
+        src: 'assets/image/galeria/all/03.jpeg',
+        w: 1024,
+        h: 683
+      },
+      {
+          src: 'assets/image/galeria/all/04.jpeg',
+          w: 1024,
+          h: 683
+      },
+      {
+          src: 'assets/image/galeria/all/05.jpeg',
+          w: 683,
           h: 1024
       },
       {
-          src: 'assets/image/galeria/peca.png',
+          src: 'assets/image/galeria/all/06.jpeg',
           w: 1024,
           h: 683
       },
       {
-          src: 'assets/image/galeria/imagemDisel.png',
-          w: 1024,
-          h: 964
+          src: 'assets/image/galeria/all/07.png',
+          w: 410,
+          h: 240
       },
       {
-          src: 'assets/image/galeria/maktro01.jpg',
-          w: 1024,
-          h: 683
-      },
-      {
-          src: 'assets/image/galeria/banner01.jpg',
-          w: 1024,
-          h: 683
-      },
-      {
-          src: 'assets/image/galeria/empresasLocacao.jpg',
-          w: 1024,
-          h: 683
+          src: 'assets/image/galeria/all/08.png',
+          w: 224,
+          h: 301
       }
     ];
 
@@ -65,14 +75,19 @@ openPhotoSwipeDiesel = function() {
     // build items array
     var items = [
         {
-            src: 'assets/image/galeria/imagemDisel.png',
-            w: 1024,
-            h: 964
+            src: 'assets/image/galeria/diesel/01.jpeg',
+                w: 1024,
+                h: 683
         },
         {
-            src: 'assets/image/galeria/maktro01.jpg',
-            w: 1024,
-            h: 683
+            src: 'assets/image/galeria/diesel/02.jpeg',
+                w: 1024,
+                h: 683
+        },
+        {
+            src: 'assets/image/galeria/diesel/03.jpeg',
+                w: 1024,
+                h: 683
         }
     ];
 
@@ -96,15 +111,20 @@ openPhotoSwipeLocacoes = function() {
       // build items array
       var items = [
           {
-              src: 'assets/image/galeria/banner01.jpg',
+              src: 'assets/image/galeria/locacao/01.jpeg',
               w: 1024,
               h: 683
           },
           {
-              src: 'assets/image/galeria/empresasLocacao.jpg',
+              src: 'assets/image/galeria/locacao/02.jpeg',
               w: 1024,
               h: 683
-          }
+          },
+          {
+              src: 'assets/image/galeria/locacao/03.jpeg',
+              w: 683,
+              h: 1024
+          },
       ];
 
       // define options (if needed)
@@ -127,14 +147,14 @@ openPhotoSwipePecas = function() {
         // build items array
         var items = [
             {
-                src: 'assets/image/galeria/02.png',
-                w: 964,
-                h: 1024
+                src: 'assets/image/galeria/pecas/01.png',
+                w: 410,
+                h: 240
             },
             {
-                src: 'assets/image/galeria/peca.png',
-                w: 1024,
-                h: 683
+                src: 'assets/image/galeria/pecas/02.png',
+                w: 224,
+                h: 301
             }
         ];
 
