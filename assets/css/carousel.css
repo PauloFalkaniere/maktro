@@ -234,7 +234,10 @@ footer{
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media(max-width: 875px){
-
+  .resposive{
+    width: 100%;
+    height: 240px !important;
+  }
   .imageFeaturette{
     float: initial !important;
   }
