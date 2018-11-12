@@ -50,8 +50,8 @@ footer{
   left: 25%; */
 }
 .empresas{
-  width: 400px;
-  height: 350px;
+  width: 100%;
+  height: auto;
 }
 
 .maktroDisel{
